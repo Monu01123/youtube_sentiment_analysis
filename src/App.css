@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  .text-blue-500 {
+    color: #3182ce;
+  }
+  
+  .text-green-600 {
+    color: #38a169;
+  }
+  
+  .text-red-600 {
+    color: #e53e3e;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280;
+  }
+  
+  .text-gray-800 {
+    color: #1f2937;
+  }
+  
+  /* Container Styles */
+  .container {
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f7fafc;
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .grid-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Form and Button Styles */
+  input,
+  select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #3182ce;
+    outline: none;
+  }
+  
+  button {
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #e2e8f0;
+    cursor: not-allowed;
+  }
+  
+  .bg-blue-600 {
+    background-color: #3182ce;
+  }
+  
+  .bg-green-600 {
+    background-color: #38a169;
+  }
+  
+  .bg-gray-400 {
+    background-color: #e2e8f0;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7fafc;
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .mt-6 {
+    margin-top: 2rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 2rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.25rem;
+  }
+  
+  .mr-3 {
+    margin-right: 0.75rem;
+  }
+  
+  /* Pie Chart Styles */
+  .pie-chart {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .pie-chart canvas {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Select Styles */
+  select {
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
