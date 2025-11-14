@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Sentiment Panel Pro",
+  "version": "2.1",
+  "description": "Premium sentiment panel under YouTube video (calls local backend).",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:8000/*"
+  ],
+  "content_scripts": [
+  {
+    "matches": [
+      "https://www.youtube.com/*",
+      "https://m.youtube.com/*"
+    ],
+    "js": ["content-script.js"],
+    "run_at": "document_end"
+  }
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
